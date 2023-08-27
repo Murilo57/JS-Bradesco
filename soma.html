@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatoria com entrada de dados por Formulários</title>
+</head>
+<body>
+    <form action="" name="MeuFormulario" method="post">
+        Entre com o valor 1: <input type="text" name="f_n1"> <p></p>
+        Entre com o valor 2: <input type="text" name="f_n2"> <p></p>
+        <input type="button" value="somar" name="btn_somar" onclick="soma()" />
+        <input type="reset" name="btn_apagar" value="apagar"/>
+    </form>
+
+    <script>
+        /*Objetivo: Desenvolver um programa em JavaScript que faça a leitura de 2 numeros inteiros
+        aplique a conversão de valores com parseInt e apresente o resultado da soma entre eles.
+        */
+
+        //Variaveis
+        var js_n1;
+        var j2_n2;
+        var js_soma;
+
+        function soma() {
+
+            js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+            js_n2 = parseInt(document.MeuFormulario.f_n2.value);
+
+            js_soma = js_n1 + js_n2;
+
+            window.alert(`Resultado da somatória = ${js_soma}`)
+        }
+    </script>
+</body>
+</html>

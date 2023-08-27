@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições (IF-ELSE)</title>
+</head>
+<body>
+    <script>
+        /* Objetivo: Ler dois valores, independente da ordem em que forem digitador, e apresenta-los em ordem crescente.
+            Com a utilização de decisão condicional composta (if...else), não há mais necessidade de definir uma terceira variavel
+        */
+
+        //Variaveis
+        var js_n1;
+        var js_n2;
+
+        //Entrada de dados
+        js_n1 = parseInt(window.prompt('Informe o valor do primeiro numero', '00'));
+        js_n2 = parseInt(window.prompt('Informe o valor do segundo numero', '00'));
+
+        //Saida de Dados sem classificação
+        document.write(`Numero 1 digitado: ${js_n1} <br/>`);
+        document.write(`Numero 2 digitado: ${js_n2}`);
+
+       //Saida de dados com classificação por decisao condicional composta (if...else)
+       if (js_n1 < js_n2) {
+        document.write(`<p><br>Classificação em Ordem Crescente <br/> ${js_n2} e ${js_n1}`);
+       } else {
+        document.write(`<p><br>Classificação em Ordem Crescente <br/> ${js_n1} e ${js_n2}`);
+       }
+    </script>
+</body>
+</html>

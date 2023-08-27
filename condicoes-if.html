@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições (if)</title>
+</head>
+<body>
+    <script>
+        /*Objetivo: Ler dois valores, indepentemente da ordem em que foram digitados, e apresentá-los em ordem crescente.
+            Será necessário efetuar a troca de valores, por isso, recomendamos definir uma terceira variável.
+        */
+
+        // Definição das variáveis
+        var js_n1;
+        var js_n2;
+        var js_n3;
+
+        //Entrada de dados
+        js_n1 = parseInt(window.prompt('Informe o valor do primeiro numero: ', '00'));
+        js_n2 = parseInt(window.prompt('Informe o valor do segundo numero', '00'));
+
+        //Saida de Dados sem calssificação
+        document.write(`Numero 1 digitado = ${js_n1}`);
+        document.write(`<br> numero 2 digitado = ${js_n2}`);
+
+        //Saida de Dados com classificação por decisão condicional simples (if)
+        if (js_n1 > js_n2) {
+            js_n3 = js_n1;
+            js_n1 = js_n2;
+            js_n2 = js_n3;
+        }
+
+        document.write(`<p><br>Classificação em Ordem Crescente: ${js_n1} e ${js_n2}</br>`);
+    </script>
+</body>
+</html>
